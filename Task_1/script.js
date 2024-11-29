@@ -1,4 +1,3 @@
-// Login Functionality
 function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -10,24 +9,22 @@ function login() {
     }
   }
 
-   // Contact Alert
-   function contactAlert() {
+ function contactAlert() {
     alert('Thank you for contacting us!');
   }
 
   
-  // Fetch API Data
-  function fetchRecipes() {
+function fetchRecipes() {
     const recipesContainer = document.getElementById('recipes');
     recipesContainer.innerHTML = '<p>Loading recipes...</p>';
   
-    fetch('https://dummyjson.com/recipes') // API URL
+    fetch('https://dummyjson.com/recipes')
       .then(response => response.json())
       .then(data => {
-        const recipes = data.recipes; // Accessing the 'products' array
-        recipesContainer.innerHTML = ''; // Clear the loading message
+        const recipes = data.recipes;
+        recipesContainer.innerHTML = '';
   
-        recipes.forEach(recipes => { // Display the first 5 items
+        recipes.forEach(recipes => {
           const recipeDiv = document.createElement('div');
           recipeDiv.classList.add('recipe');
   
@@ -45,17 +42,15 @@ function login() {
   }
   
   
-  
-  
   function fetchProducts() {
     const productsContainer = document.getElementById('products');
     productsContainer.innerHTML = '<p>Loading products...</p>';
   
-    fetch('https://dummyjson.com/products') // Updated API URL
+    fetch('https://dummyjson.com/products')
       .then(response => response.json())
       .then(data => {
-        const products = data.products; // Adjusted to match the 'products' array
-        productsContainer.innerHTML = ''; // Clear the loading message
+        const products = data.products;
+        productsContainer.innerHTML = '';
   
         products.forEach(product => {
           const productDiv = document.createElement('div');
@@ -78,11 +73,11 @@ function login() {
     const usersContainer = document.getElementById('users');
     usersContainer.innerHTML = '<p>Loading products...</p>';
   
-    fetch('https://dummyjson.com/users') // Updated API URL
+    fetch('https://dummyjson.com/users')
       .then(response => response.json())
       .then(data => {
-        const users = data.users; // Adjusted to match the 'products' array
-        usersContainer.innerHTML = ''; // Clear the loading message
+        const users = data.users;
+        usersContainer.innerHTML = ''; 
   
         users.forEach(users => {
           const usersDiv = document.createElement('div');
@@ -100,11 +95,4 @@ function login() {
       });
   }
   
-
-
-  
-  
- 
-
-
 
