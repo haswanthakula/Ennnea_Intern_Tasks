@@ -18,22 +18,25 @@ This project demonstrates the deployment of a static website using Docker. The w
 
 ### 1. Prepare the Dockerfile
 
-FROM nginx:alpine    //lightweight web server image
+FROM nginx:alpine    
+* //lightweight web server image
 
-COPY . /usr/share/nginx/html    //Copy our static files to the web server's default directory
+COPY . /usr/share/nginx/html    
+* //Copy our static files to the web server's default directory
 
 EXPOSE 80
 
 ### 2. Build the Docker image
 
-docker build -t static-website .    //-t static-website: Tags the image as static-website
+docker build -t static-website .    
+* //-t static-website: Tags the image as static-website
 
 ### 3. Run the Docker container
 
 docker run -d -p 8080:80 static-website
 
-//-d: Runs the container in detached mode.
-//-p 8080:80: Maps port 80 of the container to port 8080 on our machine.
+* //-d: Runs the container in detached mode.
+* //-p 8080:80: Maps port 80 of the container to port 8080 on our machine.
 
 
 # The static website is now deployed and can be accessed locally or through a Docker-enabled environment. Visit http://localhost:8080 to view it.
@@ -41,15 +44,6 @@ docker run -d -p 8080:80 static-website
 
 ## Push Docker Image to Docker Hub
 
-docker login
-docker tag static-website haswanthakula08/static-website:latest
-docker push haswanthakula08/static-website:latest
-
-
-
-
-
-
-
-
-
+* docker login
+* docker tag static-website haswanthakula08/static-website:latest
+* docker push haswanthakula08/static-website:latest
