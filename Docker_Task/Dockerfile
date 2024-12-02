@@ -1,5 +1,5 @@
 FROM node.js:2.0.1
 
-COPY . /usr/share/n/html
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
