@@ -4,15 +4,15 @@ This project demonstrates the deployment of a static website using Docker. The w
 ## Docker Basics
 
 ### Container Commands
-docker run hello-world - Runs the Hello World application.
-docker ps - Lists running containers.
-docker ps -a - Lists all containers (past and present).
-docker stop <container-id> - Stops a running container.
-docker rm <container-id> - Removes a container.
+* docker run hello-world - Runs the Hello World application.
+* docker ps - Lists running containers.
+* docker ps -a - Lists all containers (past and present).
+* docker stop <container-id> - Stops a running container.
+* docker rm <container-id> - Removes a container.
 
 ### Image Commands
-docker images - Lists all images.
-docker rmi <image-id> - Removes an image.
+* docker images - Lists all images.
+* docker rmi <image-id> - Removes an image.
 
 ## Deployment Steps
 
