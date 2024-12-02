@@ -11,7 +11,7 @@ This project demonstrates the creation of a functional static website using HTML
   * Redirects to the homepage on successful login.
 * UI: Professionally styled with CSS for a user-friendly experience
 
-  ###  2. Homepage
+###  2. Homepage
 * Purpose: Introduces the website and explains APIs.
 * Content:
  * Definition and examples of APIs (e.g., fetching data from a server).
@@ -40,9 +40,9 @@ UI: Modern and responsive design with CSS styling.
 * Feature: Redirects users back to the login page.
 
 
-##Technical Details
+## Technical Details
 
-###Technologies Used
+### Technologies Used
 * HTML: Structures the website.
 * CSS: Provides responsive and modern styling.
 * JavaScript:
