@@ -1,4 +1,4 @@
-### Simple Static Website with API Integration
+# Simple Static Website with API Integration
 This project demonstrates the creation of a functional static website using HTML, CSS, and JavaScript, with a focus on API integration. The website consists of multiple linked pages, providing a seamless user experience and showcasing dynamic data fetched from a dummy API.
 
 ## Development Steps:
