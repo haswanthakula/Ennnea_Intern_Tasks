@@ -1,4 +1,4 @@
-FROM node.js:2.0.1
+FROM ngnix:alphine
 
 COPY . /usr/share/nginx/html
 
