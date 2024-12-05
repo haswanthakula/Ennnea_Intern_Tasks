@@ -8,6 +8,6 @@ To develop a Java application that demonstrates the usage of different collectio
 
 The application simulates an e-commerce platform with the following functionalities:
 
-*Inventory Management: Uses a Map to store items with their prices.
-*Shopping Cart: Uses a List to allow duplicate items and preserve insertion order.
-8Wishlist: Uses a Set to store unique items.
+  *Inventory Management: Uses a Map to store items with their prices.
+  *Shopping Cart: Uses a List to allow duplicate items and preserve insertion order.
+  *Wishlist: Uses a Set to store unique items.
