@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '../redux/cartSlice';
+import { removeAllFromCart } from '../redux/cartSlice';
 import {clearCart } from '../redux/cartSlice'
 import styled from 'styled-components';
 
@@ -116,6 +117,13 @@ const Cart = () => {
   };
 
 
+  const handleRemoveAllFromCart = (productId) => {
+    dispatch(removeAllFromCart(productId));
+  };
+
+  
+
+
   const handleClearCart = () => {
     dispatch(clearCart());
   };
@@ -138,7 +146,7 @@ const Cart = () => {
                   <Quantity>Quantity: {item.quantity}</Quantity>
                 </div>
               </ProductInfo>
-              <RemoveButton onClick={() => handleRemoveFromCart(item.id)}>
+              <RemoveButton onClick={() => handleRemoveAllFromCart(item.id)}>
                 Remove
               </RemoveButton>
             </CartItem>

@@ -33,10 +33,18 @@ const cartSlice = createSlice({
         state.totalPrice -= item.price;
       }
     },
+        removeAllFromCart: (state, action) => {
+      const itemId = action.payload;
+      const item = state.cartItems.find((product) => product.id === itemId);
+      if (item) {
+        state.cartItems = state.cartItems.filter((product) => product.id !== itemId);
+        state.totalPrice -= item.price * item.quantity;
+      }
+    },
     clearCart(state) {
       state.cartItems = []; 
     },
-  },
+  },  
 });
 
 export const { addToCart, removeFromCart, removeAllFromCart,clearCart } = cartSlice.actions;
